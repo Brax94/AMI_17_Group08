@@ -25,6 +25,22 @@ body{
 	-o-background-size: cover;
 	background-size: cover;
 }
+
+.glossary-modal {
+	position: fixed;
+	/*border-radius: 50%;
+	border-width: 2px;
+	background-color: white;
+	border: black;*/
+	z-index: 999;
+	bottom: 70%;
+	right: 5%;
+	/*right: 5%;
+	top: 30%;
+	width: 50px;
+	height: 50px;*/
+}
+
 .headerLine:after{
 	content: "";
 	position: absolute;
@@ -314,7 +330,7 @@ border: none;
 	margin-top: 16px;
 	text-align:center;
 	font-family: 'Roboto', 'sans-serif';
-	font-size:16px;
+	font-size:18px;
 	font-weight:300;
 }
 /**/
