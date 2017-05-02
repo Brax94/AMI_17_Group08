@@ -58,6 +58,13 @@ body{
 .logo span{
 	color:#1fcdff;
 }
+.img-responsive-circ {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+
+}
+
 .logo p{
 	letter-spacing: 0.5px;
 	margin-top: -10px;
