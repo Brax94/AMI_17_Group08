@@ -240,18 +240,131 @@
 			<div class="row">
 				<div class="col-md-12 cBusiness">
 					<h3>System Requirements</h3>
-					<h4> Functional and non-functional requirements</h4>
 				</div>
 			</div>
 		</div>
+
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div style="text-align: center; padding-top: 2em;">
-						<span class="glyphicon glyphicon-cog" aria-hidden="true" style="font-size: 2em;"></span>
+						<!--
+						<button class="btn mybutton active" role="button" data-toggle="collapse" 
+						data-target="#functional" aria-expanded="false" aria-controls="functional" autocomplete="off">
+						  Functional Requirements
+						</button>
+						<button class="mybutton" role="button"
+							data-toggle="collapse"
+						 data-target="#nonfunctional" aria-expanded="false" aria-controls="nonfunctional" autocomplete="off">
+						  Non-Functional Requirements
+						</button>
+						%%%%id = functional/nonfunctional class="collapse"
+						-->
+						
+						<div id="functional">
+							<h3> Functional Requirements</h3>
+						    <div class="panel-group polygraphy">
+						 	<div class="panel panel-default">
+						 		<div class="panel-heading">
+						 		<h4> F1:1 Obtaining relevant information </h4>
+						 	</div>
+						  	  <div class="panel-body">The sensing unit needs to communicate with one specific package and obtain info from the tag. <b> Priority </b> 1</div>
+						 	 </div>
+						 	 <div class="panel panel-default">
+						 		<div class="panel-heading">
+						 		<h4> F1:2 Set packages about to expire </h4>
+						 	</div>
+						  	  <div class="panel-body">The sensor should use information from the tags with close expiration date, and mark these with a glowing LED to alert the customers. <b> Priority </b> 1</div>
+						 	 </div>
+						 	 <div class="panel panel-default">
+						 		<div class="panel-heading">
+						 		<h4> F1:3 Changing active LEDs </h4>
+						 	</div>
+						  	  <div class="panel-body">When the customer is interacting with the system, the LEDs that mark items close to expiration will be switched off. Instead, LEDs will light up to mark packages that correspond best to the customer's’ choices. <b> Priority </b> 1</div>
+						 	 </div>
+
+						 	 <div class="panel panel-default">
+						 		<div class="panel-heading">
+						 		<h4> F1:4 Removing chosen packages</h4>
+						 	</div>
+						  	  <div class="panel-body">When a customer has chosen a package and removed it from the vicinity of the sensing unit, the tag LED should be switched off to avoid unnecessary annoyance. <b> Priority </b> 4</div>
+						 	 </div>
+						 	 <div class="panel panel-default">
+						 		<div class="panel-heading">
+						 		<h4> F2:1 Home screen </h4>
+						 	</div>
+						  	  <div class="panel-body">The interface should have a home screen where the customer can either log in through the account card, or proceed independently of the account. <b> Priority </b> 1</div>
+						 	 </div>
+						 	 <div class="panel panel-default">
+						 		<div class="panel-heading">
+						 		<h4> F2:2 Setting choice parameters </h4>
+						 	</div>
+						  	  <div class="panel-body">The customer should be able to see and set parameters for the calculation of the optimal combination of meat products. Primary parameters in our system are a when the food is to be consumed, and how many people will consume it. The parameters are either suggested from the customer account, or specified directly in the interface without an account login. <b> Priority </b> 1</div>
+						 	 </div>
+						 	 <div class="panel panel-default">
+						 		<div class="panel-heading">
+						 		<h4> F3:1 Creating an account </h4>
+						 	</div>
+						  	  <div class="panel-body">The admin user should be able to create a customer user account based on a set of information provided by the user. This information includes the amount of people the customer is usually shopping for. <b> Priority </b> 2</div>
+						 	 </div>
+
+						 	 <div class="panel panel-default">
+						 		<div class="panel-heading">
+						 		<h4> F3:2 System logging in </h4>
+						 	</div>
+						  	  <div class="panel-body">When the sensing unit is touched with a user account card, the relevant info should be obtained from the card. The system will then go to a logged in state, where the customer is faced with several options. <b> Priority </b> 2</div>
+						 	 </div>
+						  </div>
+						</div>
+
+
+						<div id="nonfunctional">
+							<h3> Non-Functional Requirements </h3>
+						    <div class="panel-group polygraphy">
+						 	<div class="panel panel-default">
+						 		<div class="panel-heading">
+						 		<h4> NF1 - Efficiency </h4>
+						 	</div>
+						  	  <div class="panel-body">The led lights should take maximum 0.5s to light up after the user has inputted the parameters.</div>
+						 	 </div>
+						 	 <div class="panel panel-default">
+						 		<div class="panel-heading">
+						 		<h4> NF2 - Usability</h4>
+						 	</div>
+						  	  <div class="panel-body">The system will communicate in English</div>
+						 	 </div>
+						 	 <div class="panel panel-default">
+						 		<div class="panel-heading">
+						 		<h4> NF3 - Reliability </h4>
+						 	</div>
+						  	  <div class="panel-body">The sensing unit and the interface must at all times be connected to a power supply</div>
+						 	 </div>
+						 	 <div class="panel panel-default">
+						 		<div class="panel-heading">
+						 		<h4> NF4 - Usability </h4>
+						 	</div>
+						  	  <div class="panel-body">The interface should be self-explanatory, even for customers who are not accustomed to technological solutions.</div>
+						 	 </div>
+						  </div>
+						</div>
+
+
+
+
+
+
+					<!--<ul id="filter" class="option-set" data-option-key="filter">
+						<li><a class="selected" href="#filter" data-option-value="*" class="current">Functional Requirements</a></li>
+						<li><a href="#filter" data-target="#collapseExample">Non functional requirements</a></li>
+					</ul>-->
+				</div><!-- //filter_block -->  
+						</div>
 					</div>
 				</div>
 			</div>
+			
+
+
 		</div>
 	</div>
 

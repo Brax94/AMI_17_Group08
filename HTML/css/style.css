@@ -854,6 +854,33 @@ border: none;
 	//color:#fff;
 	box-shadow: 0px 2px 0px 0px #179abf;
 }
+.mybutton{
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#fff;
+	font-size: 13px;
+	text-align:center;
+	font-family: 'Roboto', 'sans-serif';
+	font-weight: 700;
+	
+	margin-bottom: 15px;
+	margin-right: 10px;
+	border-radius:4px;
+	
+	padding:10px;
+	background:#2f2f2f;
+	box-shadow: 0px 2px 0px 0px #000;
+	padding-right: 18px;
+	padding-left: 18px;
+	padding-top:11px;
+}
+.mybutton:hover{
+	cursor:pointer;
+	background:#1fcdff;
+	//color:#fff;
+	box-shadow: 0px 2px 0px 0px #179abf;
+}
+
 #filter .current{
 	background:#1fcdff;
 	box-shadow: 0px 2px 0px 0px #179abf;
